@@ -64,7 +64,7 @@ nav a:hover {
 }
 
 .quote {
-  background: url(images/flowers.png) no-repeat center center fixed;
+  background: url(images/perserverance1.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -77,12 +77,17 @@ nav a:hover {
 p {
   margin: 0 auto;
   padding: 0;
-  /*text-align: center;*/
+  width: 30%;
   color: #ffffff;
-  position: relative;
-  left: 820px;
-  top: 150px;
-  font-size: 20px;
+  position: absolute;
+  left: 55%;
+  top: 40%;
+  font-size: 32px;
+  font-family: 'Times new roman';
+  font-style: italic;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 500;
 }
 
 
