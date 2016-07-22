@@ -1,6 +1,16 @@
 .wrapper {
    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
    position: relative;
+   /*background-color: linen;*/
+   /*background-color: rgba(72,147,158, .2);*/
+   /*background: rgba(240,217,104,1);
+background: -moz-linear-gradient(top, rgba(240,217,104,1) 0%, rgba(70,225,252,0.26) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(240,217,104,1)), color-stop(100%, rgba(70,225,252,0.26)));
+background: -webkit-linear-gradient(top, rgba(240,217,104,1) 0%, rgba(70,225,252,0.26) 100%);
+background: -o-linear-gradient(top, rgba(240,217,104,1) 0%, rgba(70,225,252,0.26) 100%);
+background: -ms-linear-gradient(top, rgba(240,217,104,1) 0%, rgba(70,225,252,0.26) 100%);
+background: linear-gradient(to bottom, rgba(240,217,104,1) 0%, rgba(70,225,252,0.26) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0d968', endColorstr='#46e1fc', GradientType=0 );*/
 }
 
 header {
@@ -31,14 +41,18 @@ header {
 }
 
 .logo {
-  color: black;
+  color: #ffffff;
   padding: 15px;
   font-family: 'Playfair Display', serif;
-  font-size: 30px;
+  font-size: 2.5em;
   letter-spacing: 2px;
   font-weight: bold;
   font-style: italic;
   text-decoration: none;
+}
+
+.logo2 {
+  color: #000000;
 }
 
 img {
@@ -50,6 +64,7 @@ img {
 }
 
 nav {
+  background-color: #000000;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
   text-align: center;
@@ -73,13 +88,13 @@ nav a:hover {
 
 .nav-list {
   box-sizing: border-box;
-  color: #000000;
+  color: #ffffff;
   display: inline-block;
   height: 50px;
   line-height: 50px;
   margin: 0 30px;
   text-align: center;
-  min-width: 185px;
+  min-width: 13%;
   font-weight: 100;
 }
 
@@ -93,8 +108,12 @@ nav a:hover {
 .course {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 1em;
   margin: 5px auto;
+}
+
+.course2 {
+  color: #E0A210;
 }
 
 .main-container {
@@ -103,9 +122,20 @@ nav a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  width: 100%;
-  height: 650px;
+  z-index: -99;
   opacity: 0.8;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .quote {
@@ -116,7 +146,7 @@ nav a:hover {
   position: absolute;
   left: 55%;
   top: 40%;
-  font-size: 32px;
+  font-size: 2em;
   font-family: 'Times new roman';
   font-style: italic;
   letter-spacing: 1px;
@@ -143,28 +173,30 @@ nav a:hover {
 }
 
 .title {
-  font-size: 20px;
-  margin: 10px auto;
+  font-size: 1.5em;
+  margin: 20px auto 10px auto;
 }
 .description {
   width: 50%;
-  margin: 15px auto;
+  margin: 30px auto;
+  font-weight: normal;
 }
 
 .site a,
 .repo a {
   display: inline-block;
-  border: 6px double #000000;
+  border: 6px double #ffffff;
   padding: 10px;
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 20px;
+  background-color: #000000;
 }
 
 .site a:hover,
 .repo a:hover {
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
-  background-color: #000000;
-  border-color: #ffffff;
+  background-color: #ffffff;
+  border-color: #000000;
 }
